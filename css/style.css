@@ -1,0 +1,89 @@
+@import "resets.css";
+@import "layout.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --roboto-font: Roboto, 'san-serif';
+    --Pale-Navy: #36384D;
+    --Dark-Navy: #242742;
+    --grey-25: rgba(25, 24, 43, 0.25);
+    --Gradient-1: linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
+}
+
+.page-wrapper {
+    background-color: var(--Pale-Navy);
+    color: var(--Dark-Navy);
+    font-family: var(--roboto-font);
+    justify-content: center;
+    align-items: center;
+}
+#newsletter-signup-container {
+    background-color: white;
+    width: 928px;
+    height: 641px;
+    padding: 24px;
+    border-radius: 36px;
+    box-shadow: 0 15px 60px 0 rgba(0, 0, 0, 0.25);
+}
+#signup-container{
+    max-width: 376px;
+    height: 446px;
+}
+#newsletter-heading {
+    width: 376px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 100%;
+}
+#newsletter-pitch {
+    width: 376px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+ul {
+    width: 376px;
+}
+li {
+    list-style-image: url(../assets/images/icon-list.svg);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 376px;
+}
+label {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+form {
+    width: 376px;
+}
+input {
+    width: 376px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid var(--grey-25);
+}
+button {
+    width: 376px;
+    height: 56px;
+    border-radius: 8px;
+    font-family: Roboto, sans-serif;
+    background: var(--Dark-Navy);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+img {
+    width: 400px;
+    height: 593px;
+    object-fit: cover;
+    border-radius: 16px;
+}
