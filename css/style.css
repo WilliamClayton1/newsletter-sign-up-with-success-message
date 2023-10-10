@@ -31,7 +31,7 @@
     max-height: 446px;
     position: relative;
     left: 50px;
-    top: 80px;
+    top: 70px;
 }
 #newsletter-heading {
     width: 376px;
@@ -47,8 +47,11 @@
     line-height: 150%;
 }
 ul {
-    margin-top: 24px;
+    margin-top: 25px;
     width: 376px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 svg {
     margin-right: 16px;
@@ -62,6 +65,7 @@ li {
 }
 label {
     margin-top: 41px;
+    font-family: Roboto,'sans-serif';
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -74,13 +78,21 @@ input {
     margin-top: 8px;
     width: 376px;
     height: 56px;
+    padding-left: 24px;
+    font-family: Roboto, 'sans-serif';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
     border-radius: 8px;
     border: 1px solid var(--grey-25);
+    cursor: pointer;
 }
 button {
     width: 376px;
     height: 56px;
     margin-top: 24px;
+    border: none;
     border-radius: 8px;
     font-family: Roboto, sans-serif;
     background: var(--Dark-Navy);
@@ -90,6 +102,11 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
+    cursor: pointer;
+}
+button:hover {
+    background: var(--Gradient-1);
+    box-shadow: 0 15px 60px 0 rgba(0, 0, 0, 0.25);
 }
 
 #image-container {
