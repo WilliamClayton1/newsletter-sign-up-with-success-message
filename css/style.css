@@ -18,6 +18,7 @@
     align-items: center;
 }
 #newsletter-signup-container {
+    justify-content: space-between;
     background-color: white;
     width: 928px;
     height: 641px;
@@ -27,7 +28,10 @@
 }
 #signup-container{
     max-width: 376px;
-    height: 446px;
+    max-height: 446px;
+    position: relative;
+    left: 50px;
+    top: 80px;
 }
 #newsletter-heading {
     width: 376px;
@@ -37,15 +41,19 @@
 }
 #newsletter-pitch {
     width: 376px;
+    margin-top: 24px;
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
 }
 ul {
+    margin-top: 24px;
     width: 376px;
 }
+svg {
+    margin-right: 16px;
+}
 li {
-    list-style-image: url(../assets/images/icon-list.svg);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -53,6 +61,7 @@ li {
     width: 376px;
 }
 label {
+    margin-top: 41px;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -62,6 +71,7 @@ form {
     width: 376px;
 }
 input {
+    margin-top: 8px;
     width: 376px;
     height: 56px;
     border-radius: 8px;
@@ -70,6 +80,7 @@ input {
 button {
     width: 376px;
     height: 56px;
+    margin-top: 24px;
     border-radius: 8px;
     font-family: Roboto, sans-serif;
     background: var(--Dark-Navy);
