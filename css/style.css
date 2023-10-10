@@ -81,6 +81,9 @@ button {
     line-height: 150%;
 }
 
+#image-container {
+    max-width: 400px;
+}
 img {
     width: 400px;
     height: 593px;
