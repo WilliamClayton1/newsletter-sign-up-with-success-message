@@ -10,10 +10,10 @@ submitButton.addEventListener('click', (e) => {
 
     if(input.value.match(mailFormat))
     {
-        console.log(true);
+        console.log(true);//valid
     }
     else {
-        console.log(false);
+        console.log(false);//invalid
     }
 
 });
