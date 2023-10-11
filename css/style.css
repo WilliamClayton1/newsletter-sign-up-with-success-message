@@ -63,13 +63,19 @@ li {
     line-height: 150%;
     width: 376px;
 }
-label {
+#input-label {
     margin-top: 41px;
     font-family: Roboto,'sans-serif';
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
+    display: flex;
+    justify-content: space-between;
+}
+#invalidEmail {
+    color: #FF6155;
+    display: none;
 }
 form {
     width: 376px;
