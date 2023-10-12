@@ -1,7 +1,9 @@
-const submitButton = document.querySelector('button');
-
+const submitButton = document.querySelector('#submit-btn');
 const input = document.querySelector('input');
-
+const signUpContainer = document.getElementById('newsletter-signup-container');
+const successMessage = document.getElementById('success-message');
+const emailPlaceholder = document.querySelector('span');
+const dismissBtn = document.getElementById('dismiss-btn');
 const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 submitButton.addEventListener('click', (e) => {
@@ -12,7 +14,10 @@ submitButton.addEventListener('click', (e) => {
 
     if(input.value.match(mailFormat))
     {
-        console.log(true);//valid
+        signUpContainer.style.display = "none";
+        successMessage.style.display = "flex";
+        emailPlaceholder.innerHTML = input.value;
+
     }
     else {
         invalidText.style.display = 'flex';
@@ -20,5 +25,12 @@ submitButton.addEventListener('click', (e) => {
         input.style.borderColor = '#FF6155';
         input.style.backgroundColor = 'rgba(255, 97, 85, 0.15)';
     }
+
+});
+dismissBtn.addEventListener('click', () => {
+
+    signUpContainer.style.display = "flex";
+    successMessage.style.display = "none";
+    input.value = "";
 
 });
