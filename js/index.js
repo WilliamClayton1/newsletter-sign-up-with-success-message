@@ -18,8 +18,7 @@ submitButton.addEventListener('click', (e) => {
         successMessage.style.display = "flex";
         emailPlaceholder.innerHTML = input.value;
 
-    }
-    else {
+    } else {
         invalidText.style.display = 'flex';
         input.style.color = '#FF6155'
         input.style.borderColor = '#FF6155';
@@ -27,6 +26,21 @@ submitButton.addEventListener('click', (e) => {
     }
 
 });
+
+input.addEventListener('change', () => {
+    const invalidText = document.querySelector('#invalidEmail');
+
+    if(input.value.match(mailFormat)) {
+
+        invalidText.style.display = 'none';
+        input.style.color = '#242742';
+        input.style.borderColor = 'rgba(25, 24, 43, 0.25)';
+        input.style.backgroundColor = '#FFFFFF';
+
+    }
+
+})
+
 dismissBtn.addEventListener('click', () => {
 
     signUpContainer.style.display = "flex";
