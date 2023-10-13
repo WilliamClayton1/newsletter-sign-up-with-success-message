@@ -158,6 +158,12 @@ span {
     background: var(--Gradient-1);
     box-shadow: 0 16px 32px 0 rgba(255, 97, 85, 0.50);
 }
+.attribution {
+    color: #FFFFFF;
+}
+a {
+    color: aqua;
+}
 
 @media (max-width: 795px) {
 
@@ -172,7 +178,6 @@ span {
     }
 
     #newsletter-signup-container {
-        display: none;
         flex-direction: column-reverse;
         width: 100%;
         height: 100%;
@@ -210,7 +215,6 @@ span {
     }
 
     #success-message {
-        display: flex;
         padding: 149px 24px 40px 24px;
         width: fit-content;
         height: 100%;
@@ -222,7 +226,7 @@ span {
     }
 
     #dismiss-btn {
-        margin: 0;
+        margin-top: 263px;
     }
 
 }
